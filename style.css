@@ -1,0 +1,264 @@
+:root {
+  --dark-nav: #131921;
+  --header-nav: #232f3e;
+  --grey-text: #565959;
+  --light-grey: #a2a6ac;
+  --very-light-grey: #cccccc;
+  --dark-grey: #0f1111;
+  --orange: #cc6600;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: ; //TODO 
+  list-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #393c41;*/
+  padding: 0;
+  margin: 0px;
+}
+
+/* body {
+  padding: 10px 17px;
+} */
+
+.main-product-info {
+  display: grid;
+  grid-template-columns: 3fr 2fr 243px;
+}
+
+.logo-header {
+  background-color: var(--dark-nav);
+  /* TODO */
+  border: none;
+  height: 57px;
+  display: grid;
+  grid-template-columns: 111px 90px auto 55px 131px 77px 82px;
+}
+
+.logo-header-item {
+  margin-top: 17px;
+}
+
+.logo {
+  background-image: url("./img/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png");
+  background-position: -10px -51px;
+  width: 97px;
+  height: 30px;
+  background-repeat: no-repeat;
+  margin-left: 15px;
+}
+
+.del-to {
+  font-weight: 400;
+  size: 12px;
+  line-height: 14px;
+  color: var(--very-light-grey);
+}
+
+.country-name {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 15px;
+  color: #fff;
+}
+
+.hamburger-all {
+  position: relative;
+}
+
+.hamburger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 8px 0;
+}
+
+/* hamburger line */
+.hamburger > div {
+  position: relative;
+  flex: none;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* hamburger top & bottom lines */
+.hamburger > div::before,
+.hamburger > div::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: -6px;
+  width: 100%;
+  height: 2px;
+  background: inherit;
+}
+
+/* put the bottom line down */
+.hamburger > div::after {
+  top: 6px;
+}
+
+.word {
+  font-weight: 700;
+  size: 14px;
+  line-height: 12px;
+  color: #fff;
+  margin: 8px 20px;
+}
+
+.nav-header {
+  background-color: var(--header-nav);
+  height: 41px;
+  /* TODO */
+  border: none;
+  display: grid;
+  padding-top: 5px;
+  padding-bottom: 7px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.nav-to-product {
+  color: var(--grey-text);
+  font-size: 12px;
+  margin-left: 8px;
+  padding-right: 16px;
+  padding-left: 16px;
+  margin: 5px;
+  /* TODO */
+  border: none;
+}
+
+.way-finding-the-product {
+  list-style: none;
+}
+
+.list-item {
+  display: inline-block;
+}
+
+.devider {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: var(--grey-text);
+}
+
+main {
+  margin-top: 20px;
+  padding-bottom: 18px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.pic-section {
+  display: grid;
+  grid-template-columns: 1fr 12fr;
+  gap: 4px;
+}
+
+.small-imgs {
+  width: 42px;
+  list-style: none;
+  display: grid;
+  grid-template-rows: repeat(12, 42px);
+  gap: 7px;
+}
+
+.small-img {
+  width: 42px;
+  height: 42px;
+  border: var(--light-grey) 1px solid;
+  border-radius: 3px;
+}
+
+.small-img:hover {
+  border: var(--orange) solid 1px;
+}
+
+.big-img {
+  display: inline-block;
+}
+
+.main-img {
+  width: 100%;
+  height: auto;
+}
+
+.detailed-info {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--dark-grey);
+}
+
+.buy-box {
+  margin: 14px 18px;
+}
+
+.section-title {
+  border-top: var(--very-light-grey) solid 1px;
+}
+
+h2 {
+  font-family: verdana, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--orange);
+  padding-bottom: 4px;
+}
+
+.carousel-items {
+  list-style: none;
+}
+.carousel-item {
+  width: 160px;
+  margin-left: 26px;
+  display: inline-block;
+  height: 280px;
+  width: 160px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: pink;
+}
+
+.brand-box-item {
+  height: 173px;
+  width: 470px;
+  border: var(--very-light-grey) solid 1px;
+}
+
+/* TODO not working margin */
+.brand-box-2 {
+  margin-left: 24px;
+}
+
+.brands {
+  list-style: none;
+}
+
+.brand-box-item {
+  display: inline-block;
+}
